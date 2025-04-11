@@ -1,0 +1,8 @@
+For complex nos, multiplication real part and imaguinary part will do cross multiplication i square and jsquare wil be -1
+For complex nos, division multiply with conjugate means multiply with complex nos that are opposite sign from the denominator.
+
+Example:
+a = 2+3j 
+b = 4+5j
+a * b = 2 * 4 + 2 * 5j + 3j * 4 + 3j * 5j = 8 + 10j + 12j + 15j**2 [ put -1 for j**2 ]
+a / b = (2+3j) * (4-5j) / (4+5j) * (4-5j)
