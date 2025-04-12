@@ -6,3 +6,10 @@ a = 2+3j
 b = 4+5j
 a * b = 2 * 4 + 2 * 5j + 3j * 4 + 3j * 5j = 8 + 10j + 12j + 15j**2 [ put -1 for j**2 ]
 a / b = (2+3j) * (4-5j) / (4+5j) * (4-5j)
+
+Enumerate type is used to to use indexing for the immutable types like tuples, strings etc
+
+Example:
+x = ["apple", "orange", "lemon"]
+y = enumerate(x)
+print(list(y))     #then we can iterate over the tuple 
