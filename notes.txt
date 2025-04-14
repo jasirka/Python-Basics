@@ -13,3 +13,13 @@ Example:
 x = ["apple", "orange", "lemon"]
 y = enumerate(x)
 print(list(y))     #then we can iterate over the tuple 
+
+Difference between slicing and insert in list
+list = ["apple", "banana", "orange"]  # replaced the element
+list[1:3] = ["citrus", "pine apple"]  
+list.insert(2, "lemon")               # shift the element and insert in that position
+
+Difference between list() and copy() method for copying list items
+list1 = [45,78,89,23]
+list_copy = list1.copy() # this will point to list1. 
+list_copy1 = list(list1) # this will create a new list different from the original list
