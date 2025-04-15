@@ -1,5 +1,5 @@
 dict_emp = {"name": "Ashik", "age": 35, "Designation": "IT Support"}
-dict_emp = dict("name": "Ashik", "age": 35, "Designation": "IT Support") # alternate way
+# dict_emp = dict("name": "Ashik", "age": 35, "Designation": "IT Support") # alternate way
 print(len(dict_emp))
 
 if "age" in dict_emp:
