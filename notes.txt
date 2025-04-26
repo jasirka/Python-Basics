@@ -23,3 +23,20 @@ Difference between list() and copy() method for copying list items
 list1 = [45,78,89,23]
 list_copy = list1.copy() # this will point to list1. 
 list_copy1 = list(list1) # this will create a new list different from the original list
+
+Use sorted() fn to sort tuple elements
+
+Generator returns values each time with yield statement.
+Generator is a type of iterator.
+All generators are iterators. But not viceversa
+
+Example:
+def generate_numbers(n):
+    yield n
+
+print(generate_numbers(5))
+
+output
+0   1   2   3    4
+
+
