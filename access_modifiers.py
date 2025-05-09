@@ -1,5 +1,5 @@
 # Private variables can be accessed only inside the class. In order to access the private variables outside the class, 
-# it should define public function inside the class. then access that public method 
+# it should define public function inside the class. then access that public method.
 # __ is used to define private variables. _ is used to define protected variables. Normal variables are public by default.
 
 class Person:
