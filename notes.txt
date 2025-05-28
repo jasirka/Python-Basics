@@ -39,4 +39,5 @@ print(generate_numbers(5))
 output
 0   1   2   3    4
 
-
+For tuples with single element, it should add a comma at the end of the element
+Eg: ('hii',)

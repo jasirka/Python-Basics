@@ -1,0 +1,12 @@
+Use buffered=True when:
+
+You only partially fetch data (e.g., using fetchone() or fetchmany()) and:
+
+You close the cursor right after.
+
+Or run another query with the same cursor or connection.
+
+You want to:
+
+Count rows using len(cursor) or cursor.rowcount (this only works if the result set is buffered).
+
