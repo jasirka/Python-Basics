@@ -4,7 +4,7 @@ import random
 import calendar
 
 # def calc_area_rectangle(a,b):
-#     return math.pow(a,b)
+#     return a*b
 
 # def calc_area_square(a):
 #     return math.pow(a,2)

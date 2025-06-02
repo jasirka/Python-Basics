@@ -80,7 +80,9 @@ select * from products where pname not like '%ma%';
 create table members(id int not null, name varchar(20), age int);
 insert into members(id,name) values(2,'ask');
 
+select * from products;
 
 #pending topics
-#left join, right join, full outer join, cross join
 #views
+
+

@@ -1,5 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
+# import mysql.connector.cursor
 
 def create_database_and_connect(host_name, user_name, password, db_name):
     try:
@@ -208,5 +209,4 @@ def join_tables(host_name, user_name, password, db_name):
 create_database_and_connect("localhost","root","root123","mysql_db")
 # create_tables_and_insert_records("localhost","root","root123","mysql_db")
 join_tables("localhost","root","root123","mysql_db")
-
 

@@ -25,8 +25,9 @@ select e.emp_name,d.dep_name from employees e right join departments d on e.dep_
 select e.emp_name,d.dep_name from departments d left join employees e on d.dep_id=e.dep_id order by e.emp_id;
 -- Display all employees and departments, even if they don't have matching records (use UNION
 -- of LEFT and RIGHT JOIN).
-select e.emp_name,d.dep_name from employees e left join department d on e.dep_id=d.dep_id union 
-select e.emp_name,d.dep_name from employees e right join department d on e.dep_id=d.dep_id order by e.dep_id;
+-- Using LEFT JOIN to get all employees, even if they don't belong to any department
+select e.emp_name,d.dep_name from employees e left join departments d on e.dep_id=d.dep_id union 
+select e.emp_name,d.dep_name from employees e right join departments d on e.dep_id=d.dep_id;
 create table projects(project_id int primary key auto_increment, project_name varchar(32), dep_id int, foreign key(dep_id) references departments(dep_id));
 create table emp_projects(emp_id int, project_id int, foreign key(emp_id) references employees(emp_id), foreign key(project_id) references projects(project_id));
 insert into projects(project_name, dep_id) values('Budget Planner', 103);
@@ -45,7 +46,6 @@ join employees e on em.emp_id=e.emp_id group by p.project_name;
 -- Show project names along with the department name and employees working on the project.
 select p.project_name, d.dep_name, e.emp_name from projects p join emp_projects emp on p.project_id=emp.project_id join 
 departments d on p.dep_id=d.dep_id join employees e on e.emp_id=emp.emp_id order by e.emp_name;
-
 -- Create the following tables with appropriate data types and constraints:
 create table customers(customer_id int primary key auto_increment,name varchar(32),email varchar(32));
 create table products(product_id int primary key auto_increment,product_name varchar(32),price double);
@@ -79,3 +79,7 @@ select * from employees;
 select * from emp_projects;
 select * from projects;
 select * from departments;
+
+select e.emp_name,p.project_name,d.dep_name from emp_projects emp join projects p 
+on emp.project_id=p.project_id join departments d on p.dep_id=d.dep_id join employees e
+on emp.emp_id=e.emp_id

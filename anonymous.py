@@ -19,14 +19,13 @@ from functools import reduce
 
 #Reduce fn
 # Find maximum number from a list
-num_list = [12,23,56,27,78,54,67]
-
+# num_list = [12,23,56,27,78,54,67]
 # max_num = reduce(lambda x,y: x if x > y else y, num_list)
 # print(max_num)
 
 #Find the sum of all numbers in a list
-sum_num = reduce(lambda x,y: x+y, num_list)
-print(sum_num)
+# sum_num = reduce(lambda x,y: x+y, num_list)
+# print(sum_num)
 
 # def sum_list(x, y):
 #     return x+y

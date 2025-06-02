@@ -138,7 +138,7 @@ from tkinter import *
 #     root.geometry("1064x768")
 #     root.title("Checkbox Demo")
 #     menu_button = Menubutton(root, text="Student")
-#     menu_button.menu = Menu(menu_button, tearoff=0) 
+#     menu_button.menu = Menu(menu_button, tearoff=0)
 #     menu_button["menu"] = menu_button.menu
 
 #     var1 = IntVar()
@@ -187,13 +187,13 @@ from tkinter import *
 # root.title("Text Editor Demo")
 # root.geometry("1024x768")
 # root.mainloop()
-root = Tk()
-text_editor = Text(root, width=20, height=20, wrap=NONE)   # Need to set wrap to NONE for horizontal scroll
-text_editor.grid(row=0,column=0)
-scroll_bar = Scrollbar(root, orient=HORIZONTAL, command=text_editor.xview)
-scroll_bar.grid(row=1,column=0,sticky=E+W)
-text_editor.config(xscrollcommand=scroll_bar.set)
-root.mainloop()
+# root = Tk()
+# text_editor = Text(root, width=20, height=20, wrap=NONE)   # Need to set wrap to NONE for horizontal scroll
+# text_editor.grid(row=0,column=0)
+# scroll_bar = Scrollbar(root, orient=HORIZONTAL, command=text_editor.xview)
+# scroll_bar.grid(row=1,column=0,sticky=E+W)
+# text_editor.config(xscrollcommand=scroll_bar.set)
+# root.mainloop()
 
 
 # ListBox Demo
